@@ -1,9 +1,9 @@
-# SMS Spam Classifier
+# Spam-Email-Using-Logistic-Regression
 
-Interactive baseline SMS spam classifier with Streamlit visualization.
+Interactive baseline SMS spam classifier with Streamlit visualization and Streamlit Cloud deployment.
 
 ## Prerequisites
-- Python 3.10+ (works on Windows/macOS/Linux)
+- Python 3.10+ (Windows/macOS/Linux)
 
 ## Setup
 ```bash
@@ -21,24 +21,23 @@ python -m venv .venv
 # macOS/Linux
 ./.venv/bin/python train_spam_classifier.py
 ```
-Artifacts will be written to `artifacts/`:
+Artifacts are written to `artifacts/`:
 - `pipeline_lr.joblib`, `vectorizer.joblib`, `model_lr.joblib`
 - `metrics.json`, `classification_report.txt`
 
-If your machine is offline, place the dataset at `data/sms_spam_no_header.csv` manually; the script will use the cached file.
+If offline, place the dataset at `data/sms_spam_no_header.csv` manually.
 
 ## Run the Streamlit App
 ```bash
-# Using module (recommended)
 streamlit run streamlit_app.py
 
 # Or explicitly via venv Python
 .\.venv\Scripts\python.exe -m streamlit run streamlit_app.py   # Windows
 ./.venv/bin/python -m streamlit run streamlit_app.py            # macOS/Linux
 ```
-Then open: http://localhost:8501
+Open: http://localhost:8501
 
-In the sidebar, set:
+Sidebar settings:
 - Artifacts directory: `artifacts`
 - Dataset URL/cache path: keep defaults or adjust if offline
 
@@ -51,5 +50,5 @@ In the sidebar, set:
 ## Troubleshooting
 - If sections other than Data Overview don’t appear, ensure artifacts exist in `artifacts/` and re-run training.
 - If offline, copy the dataset to `data/sms_spam_no_header.csv`.
-- To change ports: `streamlit run streamlit_app.py --server.port 8502`.
+- Change port: `streamlit run streamlit_app.py --server.port 8502`.
 
