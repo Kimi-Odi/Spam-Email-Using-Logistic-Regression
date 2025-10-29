@@ -6,9 +6,8 @@
 - [x] 1.5 Update `README.md` with deploy/run instructions
 
 ## 2. GitHub + Streamlit Cloud
-- [ ] 2.1 Create a new GitHub repository and push this project
-- [ ] 2.2 In Streamlit Cloud, create a new app from the GitHub repo
-- [ ] 2.3 Select `streamlit_app.py` as the entry file; set Python to 3.11
-- [ ] 2.4 Deploy and verify app loads all sections
-- [ ] 2.5 Configure auto-deploy on push (optional)
-
+- [x] 2.1 Create a new GitHub repository and push this project
+- [x] 2.2 In Streamlit Cloud, create a new app from the GitHub repo
+- [x] 2.3 Select `streamlit_app.py` as the entry file; set Python to 3.11
+- [x] 2.4 Deploy and verify app loads all sections
+- [x] 2.5 Configure auto-deploy on push (optional)

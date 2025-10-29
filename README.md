@@ -1,5 +1,7 @@
 # Spam-Email-Using-Logistic-Regression
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://spam-email-using-logistic-regression-7juxqhef7rkgydvvepajy6.streamlit.app/)
+
 Interactive baseline SMS spam classifier with Streamlit visualization and Streamlit Cloud deployment.
 
 ## Prerequisites
@@ -47,8 +49,14 @@ Sidebar settings:
 - Model Performance: metrics, classification report, confusion matrix, ROC, PR curve, probability histogram
 - Live Inference: single-text prediction with probability bars; batch CSV upload; sample ham/spam buttons
 
+## Project Report
+- See the full report with methodology, results, and workflow: [report.md](report.md)
+
+## Cloud Deploy
+- Deployed app: https://spam-email-using-logistic-regression-7juxqhef7rkgydvvepajy6.streamlit.app/
+- Auto-deploy on push is enabled via Streamlit Cloud settings.
+
 ## Troubleshooting
 - If sections other than Data Overview don’t appear, ensure artifacts exist in `artifacts/` and re-run training.
 - If offline, copy the dataset to `data/sms_spam_no_header.csv`.
 - Change port: `streamlit run streamlit_app.py --server.port 8502`.
-
